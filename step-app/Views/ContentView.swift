@@ -13,8 +13,13 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selectedTab,
                 content:  {
-            HomeView().tabItem { Image(systemName: "house") }.tag("Home")
-            ProfileView().tabItem { Image(systemName: "person.fill") }.tag("Profile")
+            HomeView().tabItem { 
+                Image(systemName: "house")
+                Text("Home") }.tag("Home")
+            ProfileView().tabItem { 
+                Image(systemName: "person.fill")
+                Text("Profile")
+            }.tag("Profile")
         })
     }
 }
