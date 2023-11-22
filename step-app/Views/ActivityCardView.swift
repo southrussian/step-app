@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ActivityCardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                Text("Steps")
+            }
+            .padding()
+            Spacer()
+            VStack {
+                Text("15")
+            }
+            .padding()
+            
+        }
     }
 }
 
