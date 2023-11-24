@@ -17,7 +17,8 @@ struct ContentView: View {
             HomeView().tabItem { 
                 Image(systemName: "house")
                 Text("Home") }.tag("Home")
-            ProfileView().tabItem { 
+                .environmentObject(manager)
+            ProfileView().tabItem {
                 Image(systemName: "person.fill")
                 Text("Profile")
             }.tag("Profile")
