@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct step_appApp: App {
+    @StateObject var manager = HealthManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
