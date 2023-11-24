@@ -9,7 +9,11 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home")
+        LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2), content: {
+            ActivityCardView()
+            ActivityCardView()
+        })
+        .padding(.horizontal)
     }
 }
 
